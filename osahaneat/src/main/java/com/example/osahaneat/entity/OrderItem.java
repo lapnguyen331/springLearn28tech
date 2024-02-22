@@ -9,9 +9,9 @@ import java.util.Date;
 @IdClass(IdOrderItem.class)
 public class OrderItem {
     @Id
-    private int order_id;
+    private int orderId;
     @Id
-    private int food_id;
+    private int foodId;
     @Column(name = "create_date")
     private Date createDate;
 
@@ -22,20 +22,20 @@ public class OrderItem {
     @JoinColumn(name = "food_id",insertable = false,updatable = false)
     private Food food;
 
-    public int getOrder_id() {
-        return order_id;
+    public int getOrderId() {
+        return orderId;
     }
 
-    public void setOrder_id(int order_id) {
-        this.order_id = order_id;
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
     }
 
-    public int getFood_id() {
-        return food_id;
+    public int getFoodId() {
+        return foodId;
     }
 
-    public void setFood_id(int food_id) {
-        this.food_id = food_id;
+    public void setFoodId(int foodId) {
+        this.foodId = foodId;
     }
 
     public Date getCreateDate() {

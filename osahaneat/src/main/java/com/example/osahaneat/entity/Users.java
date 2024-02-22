@@ -16,7 +16,7 @@ public class Users {
 	private String password;
     @Column(name = "fullname")
     private String fullname;
-    @Column(name = "created_date")
+    @Column(name = "create_date")
     private Date created_date;
     @ManyToOne
     @JoinColumn(name = "role_id")
